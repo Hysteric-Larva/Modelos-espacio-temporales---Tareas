@@ -5,7 +5,7 @@ library(spdep)
 library(sp)
 data(anomalies)
 head(anomalies,5)
-anomalies <- head(anomalies, 500)
+anomalies <- head(anomalies, 100)
 loc=cbind(anomalies[,1],anomalies[,2])
 z=cbind(anomalies[,3])
 summary(anomalies)
@@ -131,7 +131,17 @@ A = get_myts(lat,lon,z,0.5,2)
 #WT <- knn2nb(W)
 # Calculate Geary's C
 #geary_result <- geary.test(data$variable, listw = WT)
+cord <- SpatialPoints(coords = cbind(lon, lat))
+nb <- knn2nb(knearneigh(cord, k = 3))  # Adjust 'k' value as needed
 
+# Compute weights for the spatial relationship
+W <- nb2listw(nb)
+
+# Perform Geary's C test
+geary_result <- geary.test(z, listw = W)
+
+# Print the result
+print(geary_result)
 # Print the result
 #print(geary_result)
 print(str(A))
