@@ -12,8 +12,8 @@ A grandes rasgos, este reporistorio recopila las tareas realizadas en este curso
 
 
 
-* [https://www.overleaf.com/read/qbpmtprdhvjg#59b628](Tarea 1)
-* [https://www.overleaf.com/read/twtnyzsthbhs#057b55](Tarea 3)
-* [https://www.overleaf.com/read/ytynsmgfkqcw#834000](Proyecto Final)
+* [Tarea 1](https://www.overleaf.com/read/qbpmtprdhvjg#59b628)
+* [Tarea 3](https://www.overleaf.com/read/twtnyzsthbhs#057b55)
+* [Proyecto Final](https://www.overleaf.com/read/ytynsmgfkqcw#834000)
 
  Nota: La Tarea 2 la hice a mano. Como es una tarea que no requería programación la hice a mano y esta adjunta en el repositorio.
